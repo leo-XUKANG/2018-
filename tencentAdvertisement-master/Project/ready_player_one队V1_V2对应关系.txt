@@ -1,0 +1,16 @@
+1: V2版本中 src/buildFeature_V1.py                 -> V1版本的 build_features_and_split_sets/buildFeature_V1.py
+2: V2版本中 src/build_transform_dict.py            -> V1版本的 build_features_and_split_sets/build_user_transform_dicts_new.py 和 build_ad_transform_dictls_new.py
+3: V2版本中 src/build_train_sets.py                -> V1版本的 build_features_and_split_sets/build_train_set_deepfm_new.py
+4: V2版本中 src/build_test_sets.py                 -> V1版本的 build_features_and_split_sets/build_test_set_deepfm_new_2.py
+5: V2版本中 src/Split_Train_Set_To_K.py            -> V1版本的 build_features_and_split_sets/Split_Train_Set_To_K_new.py
+6: V2版本中 src/train.py                           -> V1版本的 models/deepfm_hai_rematch_raw2.py 中 if__name__=="__main__"部分
+7: V2版本中 src/predict_and_generate_submission.py -> V1版本的 models/predict_and_submission_hai2.py
+8: V2版本中 src/mymodel.py                         -> V1版本的 models/deepfm_hai_rematch_raw2.py 中模型class定义部分
+9: V2版本中 src/config.py                          -> V1版本的 models/config_hai_1.py
+10: V2版本中 src/data_reader_rematch.py            -> V1版本的 models/data_reader_rematch_2.py
+11: V2版本中 src/control.py                        -> V1版本的 models/control_script_hai.py
+
+
+注：
+ 1:6月13号比赛结束那天要求上交代码比较急，我们在比赛过程中代码写的比较分散，所以V1版本中漏掉了关于merge_dict的小部分代码。在V2版本中把该部分代码写进了build_transform_dict.py中。
+ 2:V1版本中的dice.py的部分直接定义在了V2版本的mymodel.py中。
